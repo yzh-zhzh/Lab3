@@ -12,6 +12,9 @@ def test_bubble_sort_ascending():
 
     assert (result == test_arr)
 
+    # Alternative Method
+    # assert Lab3.bubble_sort([64, 34, 25, 12, 22, 11, 90], Lab3.SORT_ASCENDING) == [11, 12, 22, 25, 34, 64, 90]
+
 def test_bubble_sort_descending():
     result = []
     input_arr = [64, 34, 25, 12, 22, 11, 90]
@@ -21,6 +24,9 @@ def test_bubble_sort_descending():
 
     assert (result == test_arr)
 
+    # Alternative Method
+    # assert Lab3.bubble_sort([64, 34, 25, 12, 22, 11, 90], Lab3.SORT_DESCENDING) == [90, 64, 34, 25, 22, 12, 11]
+
 def test_bubble_sort_invalid():
     result = []
     input_arr = [64, 34, 25, 12, 22, 11, 90]
@@ -28,3 +34,6 @@ def test_bubble_sort_invalid():
     result = Lab3.bubble_sort(input_arr, 3)
 
     assert (result == [])
+
+    # Alternative Method
+    # assert Lab3.bubble_sort([64, 34, 25, 12, 22, 11, 90], 3) == []
